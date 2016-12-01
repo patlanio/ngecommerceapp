@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var cart_service_1 = require('../services/cart.service');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <header>\n      Cursos platzi\n    </header>\n    <section>\n      <courses></courses>\n    </section>\n  "
+            template: "\n    <header>\n      Cursos platzi\n    </header>\n    <section>\n      <courses></courses>\n      <cart></cart>\n    </section>\n  ",
+            providers: [cart_service_1.CartService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
