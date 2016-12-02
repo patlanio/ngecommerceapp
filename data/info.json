@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Angular 2",
+        "image": "http://www.ecartelera.com/images/noticias/fotos/35500/35524/1.jpg",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "name": "Python",
+        "image": "http://www.ecartelera.com/images/noticias/fotos/35500/35524/2.jpg",
+        "price": 80
+    },
+    {
+        "id": 3,
+        "name": "Joomla",
+        "image": "http://www.ecartelera.com/images/noticias/fotos/35500/35524/1.jpg",
+        "price": 10
+    }
+]

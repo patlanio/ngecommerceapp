@@ -1,4 +1,7 @@
 node_modules
 **/*.js.map
 **/*.component.js
+**/*.module.js
+**/*.services.js
 common/*.js
+*.DS_Store
