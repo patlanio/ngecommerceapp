@@ -3,5 +3,6 @@ node_modules
 **/*.component.js
 **/*.module.js
 **/*.services.js
+**/*.service.js
 common/*.js
 *.DS_Store
