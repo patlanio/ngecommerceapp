@@ -8,8 +8,7 @@ import {AuthService} from '../services/auth.service';
   template:
   `
     <header>
-      Cursos platzi
-
+      Tienda de cursos
       <div>
         <a *ngIf="!auth.session" routerLink="login" >Iniciar sesion</a>
         <a *ngIf="auth.session" (click)="logout()" >Cerrar sesion</a>
