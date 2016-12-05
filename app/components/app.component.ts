@@ -9,9 +9,12 @@ import {CartService} from '../services/cart.service';
     <header>
       Cursos platzi
     </header>
+    <nav>
+      <a routerLink="">Inicio</a>
+      <a routerLink="courses">Cursos</a>
+    </nav>
     <section>
-      <courses></courses>
-      <cart></cart>
+      <router-outlet></router-outlet>
     </section>
   `,
   providers: [CartService]
