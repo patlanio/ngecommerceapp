@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Observable</title>
+</head>
+<body>
+    <button id="my-button"></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.all.js"></script>
+    <script>
+        const b = document.getElementById("my-button");
+        const sayhi = function() {
+            console.log("Hello world")
+        }
+
+        // b.addEventListener("click", sayhi);
+        const Observable = Rx.Observable;
+
+        const clicks = Observable.fromEvent(b, 'click')
+
+        const sub = clicks.forEach(
+            e => {
+                console.log(e)
+                sayhi()
+                sub.dispose()
+            },
+            error => console.log(error)
+        )
+
+
+
+    </script>
+</body>
+</html>
